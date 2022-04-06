@@ -41,3 +41,5 @@
 - Remettre en place les balises ```<meta>``` pour le référencement SEO.
 
 - Ajouter ``aria-hidden="true"`` sur les icons pour l'accésibilité.
+
+- Ajouter un formulaire pour la connexion et la barre de recherche.
