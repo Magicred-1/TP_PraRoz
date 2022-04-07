@@ -1,6 +1,8 @@
 # Les bricoles du développeur indien
 ## Je liste ici les bricoles mise en place par le développeur indien. <img src="https://www.pngfind.com/pngs/b/44-445596_thumbs-down-png.png" aria-hidden="true" alt="thumb down png" height="20rem" width="20rem">
 
+[Accéder à la version corrigée en cliquant ici](https://magicred-1.github.io/TP_PraRoz/)
+
 - Le style.css est à la racine du projet.
 
 - Les balises ``<meta>`` ont été supprimés dans le fichier index.
@@ -43,3 +45,5 @@
 - Ajouter ``aria-hidden="true"`` sur les icons pour l'accésibilité.
 
 - Ajouter un formulaire pour la connexion et la barre de recherche.
+
+[Accéder à la version corrigée en cliquant ici](https://magicred-1.github.io/TP_PraRoz/)
