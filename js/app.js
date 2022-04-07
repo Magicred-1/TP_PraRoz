@@ -5,9 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     
     regexMail = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
     passwordUser = "test234";
-    warning = document.querySelector(".form h2");
-    email = document.getElementById("email");
-    password = document.getElementById("password");
     btn = document.getElementById("connexion");
 
     btn.addEventListener("click", e => {
@@ -19,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         email = document.getElementById("email").value;
         password = document.getElementById("password").value;
+        warning = document.querySelector(".form h2");
 
         if (email.match(regexMail) && password.match(passwordUser)) {
             warning.classList.remove("warning");
