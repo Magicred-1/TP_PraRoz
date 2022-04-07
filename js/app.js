@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log(navigator.userAgent);
 
-    let regexMail, regexMdp, warning, email, password, btn;
+    let regexMail, passwordUser, warning, email, password, btn;
     
     regexMail = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
-    regexMdp = /^[a-zA-Z0-9._-]{2,15}$/;
-    warning = document.querySelector(".warning");
-    email = document.getElementById("email").value;
-    password = document.getElementById("password").value;
+    passwordUser = "test234";
+    warning = document.querySelector(".form h2");
+    email = document.getElementById("email");
+    password = document.getElementById("password");
     btn = document.getElementById("connexion");
 
     btn.addEventListener("click", e => {
@@ -17,17 +17,24 @@ document.addEventListener("DOMContentLoaded", () => {
     
     const formConnexion = () => {
 
-        if (email.match(regexMail) && password.match(regexMdp)) {
+        email = document.getElementById("email").value;
+        password = document.getElementById("password").value;
+
+        if (email.match(regexMail) && password.match(passwordUser)) {
+            warning.classList.remove("warning");
             warning.classList.add("success");
             warning.classList.remove("error");
-            warning.innerText = "Connexion réussie";
-            console.log(warning);
+            warning.innerText = "Connection succeeded";
+
             localStorage.setItem("user", email);
             sessionStorage.setItem("user", "sessionid");
+            localStorage.setItem("password", password);
+            sessionStorage.setItem("password", "sessionpassword");
+
         } else if (!password.match(regexMail)) {
+            warning.classList.remove("warning");
             warning.classList.add("error");
-            warning.innerText = "Mail invalide";
-            console.log(warning);
+            warning.innerText = "Connection failed";
             warning.classList.remove("success");
         };
     };

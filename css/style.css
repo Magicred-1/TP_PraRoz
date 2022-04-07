@@ -259,25 +259,11 @@ ul ion-icon{
 .warning{
     display: none;
 }
-.success{
-    padding: 3rem;
-    text-align: center;
-    border: none;
-    width: 50%;
-    margin: 0 auto;
+h2.success{
     color: var(--color-success);
-    border-radius: 1rem;
-    background-color: #292929;
 }
-.error{
-    padding: 3rem;
-    text-align: center;
-    border: none;
-    width: 50%;
-    margin: 0 auto;
+h2.error{
     color: var(--color-warning);
-    border-radius: 1rem;
-    background-color: #292929;
 }
 @media screen and (max-width: 60rem){
     nav{
@@ -289,6 +275,13 @@ ul ion-icon{
     }
     nav .menu{
         display: block;
+        margin: 0 10rem 0;
+        float: none;
+    }
+    main .search {
+        max-width: 80rem;
+        height: 7.5rem;
+        float:none;
     }
     nav ul .menu {
         display: flex;
